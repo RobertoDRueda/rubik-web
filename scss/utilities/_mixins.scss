@@ -1,4 +1,3 @@
-// Mixin para fuentes
 
 @mixin font-family-main {
     font-family: $font-main;
@@ -8,17 +7,14 @@
     font-family: $font-secondary;
 }
 
-// Mixin para texto centrado
 @mixin center-text {
     text-align: center;
 }
 
-// Mixin para tamaño de fuente
 @mixin font-size($size) {
     font-size: $size;
 }
 
-// Mixin para flexbox
 @mixin flex-base($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
