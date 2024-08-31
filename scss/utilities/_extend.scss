@@ -1,0 +1,29 @@
+@import 'mixins';
+
+.footer-base {
+    padding-top: 2rem;
+    border-color: $border-color;
+    border-top-style: solid;
+    border-width: 0.1rem;
+    background-color: $background-color;
+  }
+  
+
+  .contenedor-footer-base {
+    @include grid-layout(repeat(4, 1fr), 27.6rem, 1.5rem);
+    width: 80%;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .full-width {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .flex-justify-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }

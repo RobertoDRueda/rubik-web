@@ -1,0 +1,39 @@
+// Variables de colores
+$primary-color: #037bc0;
+$primary-color-btn: #8cbc00;
+$secondary-color-btn: #769c02;
+$background-color: #ecf0f1;
+$text-color-primary: #000;
+$text-color-secondary: #fff;
+$border-color: #e1e1e1;
+
+// Variables de tipografía
+$font-main: "Raleway", sans-serif;
+$font-secondary: "Playfair Display", serif;
+$font-size-base: 1.6rem;
+$font-size-h1: 5rem;
+$font-size-h2: 4rem;
+$font-size-h3: 3rem;
+$font-size-p: 1.45rem;
+$font-weight-sm: 700;
+$font-weight-lg: 900;
+$font-weight-xl: 1000;
+
+$breakpoints: (
+  '1700px',
+  '1676px',
+  '1404px',
+  '1332px',
+  '1260px',
+  '911px',
+  '700px',
+  '694px',
+  '650px',
+  '594px',
+  '484px',
+  '434px',
+  '405px',
+  '396px',
+  '376px',
+  '362px'
+);

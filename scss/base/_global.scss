@@ -1,0 +1,42 @@
+@import './utilities/variables';
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+}
+
+body {
+    @include font-family-main;
+    @include font-size($font-size-base);
+}
+
+h1, h2, h3 {
+    @include font-family-secondary;
+}
+
+h1 {
+    @include font-size($font-size-h1);
+    font-weight: $font-weight-sm;
+}
+
+h2 {
+    @include font-size($font-size-h2);
+}
+
+h3 {
+    @include font-size($font-size-h3);
+}
+
+p {
+    @include font-size($font-size-p);
+}
+
+img {
+    max-width: 100%;
+}

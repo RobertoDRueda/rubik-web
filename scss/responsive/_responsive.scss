@@ -1,0 +1,326 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/extend';
+
+@each $breakpoint in $breakpoints {
+    @include resposive($breakpoint) {
+        @if $breakpoint =='1700px' {
+            .grid-producto {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @else if $breakpoint =='1676px' {
+            .galeria {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .imagen01 {
+                @include imagen-grid(span 2, auto);
+            }
+
+            .imagen02 {
+                @include imagen-grid-column(auto);
+            }
+
+            .imagen07 {
+                @include imagen-grid(span 2, auto);
+            }
+
+            .imagen12 {
+                @include imagen-grid(auto, span 2);
+            }
+
+            .imagen13 {
+                @include imagen-grid-row(auto);
+            }
+
+            .imagen14 {
+                @include imagen-grid(auto, span 2);
+            }
+
+            .imagen16 {
+                @include imagen-grid(span 2, auto);
+            }
+        }
+
+        @else if $breakpoint =='1404px' {
+            .contenedor-sobre-nosotros {
+                grid-template-columns: 1fr;
+                width: 80%;
+            }
+
+            .imagen01,
+            .imagen02,
+            .imagen03 {
+                @include imagen-grid-column(auto);
+            }
+
+            .imagen04 {
+                @include imagen-grid-row(auto);
+            }
+        }
+
+        @else if $breakpoint =='1332px' {
+
+            .imagen05,
+            .imagen07 {
+                @include imagen-grid-column(auto);
+            }
+
+            .imagen16 {
+                @include imagen-grid-column(span 2);
+            }
+
+            .imagen06,
+            .imagen10,
+            .imagen12,
+            .imagen14 {
+                @include imagen-grid-row(auto);
+            }
+
+            .imagen15 {
+                @include imagen-grid(auto, span 2);
+            }
+        }
+
+        @else if $breakpoint =='1260px' {
+
+            .grid-producto,
+            .grid-nuestros-producto,
+            .contenedor-footer,
+            .galeria {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .imagen15 {
+                @include imagen-grid-row(auto);
+            }
+
+            .imagen16 {
+                @include imagen-grid-column(auto);
+            }
+
+            h1 {
+                font-size: 4.8rem;
+            }
+
+            h2 {
+                font-size: 3.8rem;
+            }
+
+            h3 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @else if $breakpoint =='911px' {
+
+            .grid-producto,
+            .grid-nuestros-producto,
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+
+            .galeria {
+                grid-auto-rows: 60rem;
+            }
+
+            .contenedor-visitanos {
+                margin-left: 3rem;
+            }
+
+            h1 {
+                font-size: 4.6rem;
+            }
+
+            h2 {
+                font-size: 3.6rem;
+            }
+
+            h3 {
+                font-size: 2.6rem;
+            }
+
+            iframe {
+                width: 460px;
+                height: 215px;
+            }
+        }
+
+        @else if $breakpoint =='700px' {
+
+            .imagen-sobre-nosotros {
+                display: none;
+                align-items: start;
+            }
+
+            .galeria {
+                grid-auto-rows: 50rem;
+            }
+        }
+
+        @else if $breakpoint =='694px' {
+
+            .contenedor-sobre-nosotros {
+                height: 60rem;
+            }
+        }
+
+        @else if $breakpoint =='650px' {
+
+            .contenedor-footer {
+                grid-template-columns: 1fr;
+            }
+        
+            .galeria {
+                grid-auto-rows: 40rem;
+            }
+        
+            h1 {
+                font-size: 4.4rem;
+            }
+        
+            h2 {
+                font-size: 3.4rem;
+            }
+        
+            h3 {
+                font-size: 2.4rem;
+            }
+        
+            iframe {
+                width: 345px;
+                height: 200px;
+            }
+        
+            .contenedor-sobre-nosotros {
+                height: 65rem;
+            }
+        
+            .contenedor-visitanos {
+                margin-top: 2rem;
+                margin-left: 2rem;
+            }
+        
+            .nosotros-parrafo {
+                padding: 0 2rem;
+            }
+        }
+
+        @else if $breakpoint =='594px' {
+            .contenedor-sobre-nosotros {
+                height: 80rem;
+            }
+        
+            .galeria {
+                grid-auto-rows: 35rem;
+            }            
+        }
+
+        @else if $breakpoint =='484px' {
+            .contenedor-sobre-nosotros {
+                height: 90rem;
+            }
+        
+            .galeria {
+                grid-auto-rows: 30rem;
+            }            
+        }
+
+        @else if $breakpoint =='434px' {
+            .contenedor-sobre-nosotros {
+                height: 95rem;
+            }
+        
+            .galeria {
+                grid-auto-rows: 25rem;
+            }
+        
+            h1 {
+                font-size: 4rem;
+            }
+        
+            p {
+                font-size: 1.4rem;
+            }            
+        }
+
+        @else if $breakpoint =='405px' {
+            h1 {
+                font-size: 3.8rem;
+            }
+        
+            .contenedor-sobre-nosotros {
+                height: 100rem;
+            }
+        
+            .galeria {
+                grid-auto-rows: 20rem;
+            }            
+        }
+
+        @else if $breakpoint =='396px' {
+            h1 {
+                font-size: 3.5rem;
+            }
+        
+            h2 {
+                font-size: 2.8rem;
+            }
+        
+            h3 {
+                font-size: 2rem;
+            }
+        
+            p {
+                font-size: 1.38rem;
+            }
+        
+            iframe {
+                width: 320px;
+                height: 185px;
+            }
+        
+            .contenedor-visitanos {
+                margin-left: 1rem;
+            }
+        
+            .galeria {
+                grid-auto-rows: 18rem;
+            }            
+        }
+
+        @else if $breakpoint =='376px' {
+            h1 {
+                font-size: 3.2rem;
+            }
+        
+            p {
+                font-size: 1.30rem;
+            }
+        
+            .contenedor-sobre-nosotros {
+                height: 95rem;
+            }            
+        }
+
+        @else if $breakpoint =='362px' {
+            h1 {
+                font-size: 3rem;
+            }
+        
+            h2 {
+                font-size: 2.5rem;
+            }
+        
+            h3 {
+                font-size: 2rem;
+            }
+        
+            p {
+                font-size: 1.28rem;
+            }            
+        }
+    }
+}

@@ -485,7 +485,7 @@ footer {
 .campo input,
 .campo textarea,
 .campo select {
-    flex: 1;
+    /* flex: 1; */
     border: 1px solid #e1e1e1;
     padding: 1rem;
     margin-right: .5rem;

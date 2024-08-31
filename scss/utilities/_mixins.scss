@@ -1,0 +1,91 @@
+// Mixin para fuentes
+
+@mixin font-family-main {
+    font-family: $font-main;
+}
+
+@mixin font-family-secondary {
+    font-family: $font-secondary;
+}
+
+// Mixin para texto centrado
+@mixin center-text {
+    text-align: center;
+}
+
+// Mixin para tamaño de fuente
+@mixin font-size($size) {
+    font-size: $size;
+}
+
+// Mixin para flexbox
+@mixin flex-base($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-center($direction: row, $justify: center, $alignitem: center, $textalign: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $alignitem;
+    text-align: $textalign;
+}
+
+@mixin grid-layout($columns: 1fr, $rows: auto, $gap: 1rem) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-auto-rows: $rows;
+    gap: $gap;
+}
+
+@mixin button-style($bg-color: $primary-color-btn, $hover-color: $secondary-color-btn, $text-color: $text-color-secondary) {
+    background-color: $bg-color;
+    display: block;
+    color: $text-color;
+    padding: 1rem;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: $font-weight-xl;
+    font-size: medium; //1.2rem;
+    text-align: center;
+
+    &:hover {
+        background-color: $hover-color;
+        cursor: pointer;
+    }
+}
+
+@mixin imagen-grid($column-span: auto, $row-span: auto) {
+    grid-column: $column-span;
+    grid-row: $row-span;
+}
+
+@mixin imagen-grid-column($column-span: auto) {
+    grid-column: $column-span;
+}
+
+@mixin imagen-grid-row($row-span: auto) {
+    grid-row: $row-span;
+}
+
+
+@mixin form-legend($width: 100%, $textalign: center, $padding: 1rem, $marginbotton: 4rem) {
+    background-color: $primary-color;
+    width: $width;
+    text-align: $textalign;
+    color: $text-color-secondary;
+    text-transform: uppercase;
+    font-weight: $font-weight-lg;
+    padding: $padding;
+    margin-bottom: $marginbotton;
+}
+
+@mixin resposive($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}

@@ -1,0 +1,33 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/extend';
+
+header {
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    background-color: $background-color;
+    z-index: 9999;
+}
+
+.contenedor-header {
+    @include flex-base(row, space-between, center);
+}
+
+.logo {
+    max-width: 4.5rem;
+    max-height: 4.5rem;
+    margin-right: 1.5rem;
+}
+
+.nombre-tienda {
+    text-align: left;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    span {
+        color: $primary-color;
+    }
+}
+
+

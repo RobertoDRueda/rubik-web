@@ -1,0 +1,67 @@
+@import './utilities/variables';
+@import './utilities/mixins';
+@import './utilities/extend';
+
+.titulo-galeria {
+    @include center-text;
+    padding: 1rem;
+}
+
+.galeria {
+    @include grid-layout(repeat(4, 1fr), 40rem, 1.5rem);
+    list-style: none;
+    margin-right: 2rem;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.imagen01 {
+    @include imagen-grid(span 2, span 2);
+}
+
+.imagen02 {
+    @include imagen-grid-column(span 2);
+}
+
+.imagen03 {
+    @include imagen-grid-column(span 2);
+}
+
+.imagen04 {
+    @include imagen-grid-row(span 2);
+}
+
+.imagen05 {
+    @include imagen-grid-column(span 2);
+}
+
+.imagen06 {
+    @include imagen-grid-row(span 2);
+}
+
+.imagen07 {
+    @include imagen-grid(span 2, span 2);
+}
+
+.imagen10 {
+    @include imagen-grid-row(span 2);
+}
+
+.imagen13 {
+    @include imagen-grid-row(span 2);
+}
+
+.imagen14 {
+    @include imagen-grid-column(span 2);
+}
+
+.imagen15 {
+    @include imagen-grid-column(span 2);
+}
+
+.imagen16 {
+    @include imagen-grid-column(span 2);
+}
