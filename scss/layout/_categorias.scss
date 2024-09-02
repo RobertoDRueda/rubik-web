@@ -5,7 +5,8 @@
 .contenedor-categoria {
     margin: 0 auto;
     padding-top: 5rem;
-    h2{
+
+    h2 {
         text-align: center;
     }
 }
@@ -19,6 +20,10 @@
 .categoria {
     max-width: 30rem;
     margin: 2rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    transition: 1s;
+
     a {
         @include center-text;
         display: block;
@@ -27,11 +32,19 @@
         text-decoration: none;
         color: $text-color-primary;
         font-weight: $font-weight-sm;
+
         &:hover {
             background-color: $primary-color;
             color: $text-color-secondary;
             border-bottom-right-radius: 1rem;
             border-bottom-left-radius: 1rem;
         }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        -webkit-box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
+        box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
     }
 }

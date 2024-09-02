@@ -5,6 +5,7 @@
 .contenedor-producto {
   margin: 0 auto;
   padding-top: 5rem;
+
   h2 {
     @include center-text;
   }
@@ -14,7 +15,8 @@
   @include center-text;
 }
 
-.grid-producto, .grid-nuestros-producto {
+.grid-producto,
+.grid-nuestros-producto {
   @include grid-layout(repeat(4, 1fr), 80rem, 1.5rem);
   width: 80%;
   margin: 0 auto;
@@ -30,9 +32,18 @@
   max-height: 80rem;
   margin: 2rem;
   background-color: #037bc0;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
+    box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
+  }
 }
 
-.grid-producto .producto img, .grid-nuestros-producto .producto img {
+.grid-producto .producto img,
+.grid-nuestros-producto .producto img {
   width: 100%;
   height: 50%;
   object-fit: cover;
@@ -44,10 +55,12 @@
   padding: 2rem;
   width: 100%;
   height: 50%;
-  h3{
+
+  h3 {
     margin: 0;
   }
-  p{
+
+  p {
     margin: 0 0 .5rem 0;
   }
 }

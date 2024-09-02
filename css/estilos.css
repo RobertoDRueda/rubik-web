@@ -169,7 +169,10 @@ header {
 
 .categoria {
   max-width: 30rem;
-  margin: 2rem; }
+  margin: 2rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  transition: 1s; }
   .categoria a {
     text-align: center;
     display: block;
@@ -183,6 +186,11 @@ header {
       color: #fff;
       border-bottom-right-radius: 1rem;
       border-bottom-left-radius: 1rem; }
+  .categoria:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
+    box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75); }
 
 .footer-base, footer {
   padding-top: 2rem;
@@ -258,7 +266,8 @@ header {
 .titulo-nuestros-productos {
   text-align: center; }
 
-.grid-producto, .grid-nuestros-producto {
+.grid-producto,
+.grid-nuestros-producto {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 80rem;
@@ -274,9 +283,16 @@ header {
   max-width: 30rem;
   max-height: 80rem;
   margin: 2rem;
-  background-color: #037bc0; }
+  background-color: #037bc0;
+  transition: 1s; }
+  .producto:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75);
+    box-shadow: 22px 22px 39px -14px rgba(0, 0, 0, 0.75); }
 
-.grid-producto .producto img, .grid-nuestros-producto .producto img {
+.grid-producto .producto img,
+.grid-nuestros-producto .producto img {
   width: 100%;
   height: 50%;
   object-fit: cover; }
