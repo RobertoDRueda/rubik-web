@@ -1,8 +1,4 @@
 
-@import './utilities/variables';
-@import './utilities/mixins';
-@import './utilities/extend';
-
 .titulo-sobre-nosotros {
     @include center-text;
     margin: 2rem;

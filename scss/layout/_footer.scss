@@ -1,8 +1,4 @@
 
-@import './utilities/variables';
-@import './utilities/mixins';
-@import './utilities/extend';
-
 footer {
     @extend .footer-base;
 }
